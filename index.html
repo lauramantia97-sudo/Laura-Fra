@@ -192,22 +192,23 @@
         
     
         <div class="dropdown-custom">
-          <label>Seleziona le tue esigenze alimentari:</label>
-          <div class="dropdown-button" id="dropdownBtn" onclick="toggleDropdown()">Scegli opzioni...</div>
+          <label for = "Intolleranze">Seleziona le tue esigenze alimentari:</label>
+
+          <div class="dropdown-button" id="dropdownBtn" onclick="toggleDropdown()"></div>
         
           <div class="dropdown-content" id="dropdownVoci">
-              <label><input type="checkbox" value="Nessuna" onchange="aggiornaSelezione(this)"> Nessuna</label>
-              <label><input type="checkbox" value="Vegetariano" onchange="aggiornaSelezione(this)"> Vegetariano</label>
-              <label><input type="checkbox" value="Vegano" onchange="aggiornaSelezione(this)"> Vegano</label>
-              <label><input type="checkbox" value="Senza glutine" onchange="aggiornaSelezione(this)"> Senza glutine</label>
-              <label><input type="checkbox" value="Senza lattosio" onchange="aggiornaSelezione(this)"> Senza lattosio</label>
-              <label><input type="checkbox" value="Altro" id="checkAltro" onchange="aggiornaSelezione(this)"> Altro (specificare)</label>
+              <label><input type="checkbox" id="Intolleranze" name="Intolleranze" value="Nessuna" onchange="aggiornaSelezione(this)"> Nessuna</label>
+              <label><input type="checkbox" id="Intolleranze" name="Intolleranze" value="Vegetariano" onchange="aggiornaSelezione(this)"> Vegetariano</label>
+              <label><input type="checkbox" id="Intolleranze" name="Intolleranze" value="Vegano" onchange="aggiornaSelezione(this)"> Vegano</label>
+              <label><input type="checkbox" id="Intolleranze" name="Intolleranze" value="Senza glutine" onchange="aggiornaSelezione(this)"> Senza glutine</label>
+              <label><input type="checkbox" id="Intolleranze" name="Intolleranze" value="Senza lattosio" onchange="aggiornaSelezione(this)"> Senza lattosio</label>
+              <label><input type="checkbox" id="Intolleranze" name="Intolleranze" value="Altro" id="checkAltro" onchange="aggiornaSelezione(this)"> Altro (specificare)</label>
           </div>
         </div>
 
     <div id="campo-altro">
-        <label for="specifica-altro">Specifica qui:</label>
-        <input type="text" id="specifica-altro" placeholder="Es. allergia alle fragole, crostacei...">
+        <label>Specifica qui:</label>
+        <input type="text" id="Intolleranze" name="Intolleranze" placeholder="Es. allergia alle fragole, crostacei...">
     </div>
 </div>
 
